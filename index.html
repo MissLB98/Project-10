@@ -4,34 +4,26 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Project 10</title>
-		<meta name="viewport" content="device=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	
 	<body>
-		<main>
+		<main id="wrapper" class="clearfix">
 			<h1>awesome startup employee directory</h1>
 			<div id="directory">
 				<!-- AJAX DATA FOR 12 RANDOM USERS -->
 			</div>
+			
+			<div id="modalBackground">
+				<div>
+					
+				</div>
+			</div>
 		</main>
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script>
-			$.getJSON({
-				url: 'https://randomuser.me/api/',
-				dataType: 'json',
-				success: function(data) {
-					var HTML = '<ul>';
-						$.each(data,(i, employee) => {
-							HTML += '<li>';
-								HTML += picture.thumbnail;
-							HTML += '</li>';
-						});
-					HTML += '</ul>';
-					$('#directory').html(HTML);
-				}
-			});
-		</script>
+		
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
