@@ -8,11 +8,11 @@
 body	{
 	margin: 0 auto;
 	padding: 0;
-	width: 90%;
+	width: 100%;
 	line-height: 1.5;
 	font-size: .895em;
 	font-family: verdana;
-	background: #eee;
+	background: #553a6a;
 }
 
 h1	{
@@ -22,6 +22,7 @@ h1	{
 	color: #444;
 	font-weight: 600;
 	padding: 10px 15px;
+	margin: 20px;
 	letter-spacing: 1px;
 	color: #454545;
 	background: #fff;
@@ -38,7 +39,7 @@ h2	{
 }
 
 a[href^="tel"]	{
-	color: #5a6111;
+	color: #aa6111;
 	text-decoration: none;
 	transition: all .4s;
 }
@@ -54,11 +55,21 @@ p span	{
 	font-weight: 600;
 }
 
+
+/*MAIN*/
+
+main	{
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
 .employees	{
 	position: relative;
 	font-size: 12px;
 	padding: 0;
-	margin: 15px auto;
+	margin: auto;
 	width: 100%;
 	max-width: 1300px;
 	display: flex;
@@ -67,7 +78,6 @@ p span	{
 }
 
 .employee	{
-	cursor: pointer;
 	padding: 10px;
 	margin: 10px;
 	width: 100%;
@@ -84,6 +94,7 @@ p span	{
 .employee:focus,
 .employee:active	{
 	transform: scale(1.1);
+	cursor: pointer;
 }
 
 .employee div	{
@@ -110,21 +121,92 @@ img	{
 	display: block;
 }
 
+.modal-info	{
+	display: none;
+}
+
 
 /*MODAL WINDOW*/
 
-/*.info	{
+#modal	{
 	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 0;
+	margin: 0 auto;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0, .65);
+	z-index: 1;
+}
+
+#modalContent	{
+	position: relative;
+	top: 5%;
+	font-size: 1em;
+	background-color: #fff;
+	margin: 10px auto;
+	padding: 25px;
+	width: 100%;
+	max-width: 500px;
+	height: auto;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,0, .2);
+	text-align: center;
+	border-radius: 6px;
 }
 
 .modal-info	{
-	display: none;
-}*/
-
-.divider	{
-	margin: 10px 0;
+	text-align: left;
+	background: #000;
+	color: #fff;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 8px;
 }
 
+#modalContent img	{
+	width: 100%;
+	min-width: 80px;
+	max-width: 150px;
+	border-radius: 50%;
+	margin: 10px auto;
+	padding: 5px;
+	display: block;
+	transition: 1s;
+}
+
+.address	{
+	background-color: rgb(0,51,102);
+	padding: 10px;
+	margin: 5px;
+}
+
+.address h3	{
+	text-align: center;
+}
+
+.city	{
+	text-transform: capitalize;
+}
+
+
+/*CLOSE BUTTON*/
+
+.close	{
+	display: none;
+	color: #bff;
+	float: right;
+	font-size: 40px;
+}
+
+.close:hover,
+.close:focus	{
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
 
 
 @media (min-width: 680px)	{
