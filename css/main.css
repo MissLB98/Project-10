@@ -11,7 +11,7 @@ body	{
 	width: 90%;
 	line-height: 1.5;
 	font-size: .895em;
-	font-family: sans-serif;
+	font-family: verdana;
 	background: #eee;
 }
 
@@ -37,11 +37,28 @@ h2	{
 	color: #333;
 }
 
+a[href^="tel"]	{
+	color: #5a6111;
+	text-decoration: none;
+	transition: all .4s;
+}
+
+a[href^="tel"]:hover,
+a[href^="tel"]:focus,
+a[href^="tel"]:active	{
+	text-decoration: underline;
+	color: #1cf;
+}
+
+p span	{
+	font-weight: 600;
+}
+
 .employees	{
-	font-size: .885em;
+	position: relative;
+	font-size: 12px;
 	padding: 0;
 	margin: 15px auto;
-	list-style: none;
 	width: 100%;
 	max-width: 1300px;
 	display: flex;
@@ -66,7 +83,7 @@ h2	{
 .employee:hover,
 .employee:focus,
 .employee:active	{
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 .employee div	{
@@ -92,6 +109,23 @@ img	{
 	padding: 5px;
 	display: block;
 }
+
+
+/*MODAL WINDOW*/
+
+/*.info	{
+	display: none;
+}
+
+.modal-info	{
+	display: none;
+}*/
+
+.divider	{
+	margin: 10px 0;
+}
+
+
 
 @media (min-width: 680px)	{
 	
