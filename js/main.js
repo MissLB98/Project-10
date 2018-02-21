@@ -1,5 +1,5 @@
 $.ajax({
-	url: 'https://randomuser.me/api/?results=12',
+	url: "https://randomuser.me/api/?results=12",
 	dataType: 'json',
 	success: function(data) {
 		let HTML = '<div class="employees">';
