@@ -12,7 +12,7 @@ body	{
 	line-height: 1.5;
 	font-size: .895em;
 	font-family: verdana;
-	background: #553a6a;
+	background: #9edddf;
 }
 
 h1	{
@@ -21,8 +21,8 @@ h1	{
 	font-size: 1.2rem;
 	color: #444;
 	font-weight: 600;
-	padding: 10px 15px;
-	margin: 20px;
+	padding: 15px;
+	margin: 0 auto 20px auto;
 	letter-spacing: 1px;
 	color: #454545;
 	background: #fff;
@@ -38,17 +38,16 @@ h2	{
 	color: #333;
 }
 
-a[href^="tel"]	{
+a	{
 	color: #aa6111;
 	text-decoration: none;
 	transition: all .4s;
 }
 
-a[href^="tel"]:hover,
-a[href^="tel"]:focus,
-a[href^="tel"]:active	{
-	text-decoration: underline;
-	color: #1cf;
+a:hover,
+a:focus,
+a:active	{
+	color: #5cf;
 }
 
 p span	{
@@ -63,6 +62,7 @@ main	{
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
+	background: ;
 }
 
 .employees	{
@@ -79,10 +79,10 @@ main	{
 
 .employee	{
 	padding: 10px;
-	margin: 10px;
+	margin: 20px 10px;
 	width: 100%;
 	background: #fff;
-	border: 1px solid #ddd;
+	border: 1px solid #acc;
 	border-radius: 8px;
 	display: flex;
 	align-items: center;
@@ -93,8 +93,9 @@ main	{
 .employee:hover,
 .employee:focus,
 .employee:active	{
-	transform: scale(1.1);
+	transform: scale(1.05);
 	cursor: pointer;
+	border: 1px solid #000;
 }
 
 .employee div	{
@@ -121,10 +122,6 @@ img	{
 	display: block;
 }
 
-.modal-info	{
-	display: none;
-}
-
 
 /*MODAL WINDOW*/
 
@@ -140,6 +137,7 @@ img	{
 	overflow: auto;
 	background-color: rgba(0,0,0, .65);
 	z-index: 1;
+	transition: all .3s;
 }
 
 #modalContent	{
@@ -155,15 +153,18 @@ img	{
 	box-shadow: 0 5px 8px 0 rgba(0,0,0,0, .2);
 	text-align: center;
 	border-radius: 6px;
+	transition: all .3s;
 }
 
 .modal-info	{
+	display: none;
 	text-align: left;
 	background: #000;
 	color: #fff;
 	padding: 10px;
 	margin: 10px;
 	border-radius: 8px;
+	transition: all .3s;
 }
 
 #modalContent img	{
@@ -183,6 +184,11 @@ img	{
 	margin: 5px;
 }
 
+.street,
+.country	{
+	text-transform: capitalize;
+}
+
 .address h3	{
 	text-align: center;
 }
@@ -195,10 +201,17 @@ img	{
 /*CLOSE BUTTON*/
 
 .close	{
+	position: absolute;
+	right: 10px;
+	top: 10px;
 	display: none;
 	color: #bff;
-	float: right;
-	font-size: 40px;
+	font-size: 30px;
+	border: 2px solid #000;
+	border-radius: 50%;
+	background: #fff;
+	width: 49px;
+	transition: all .4s;
 }
 
 .close:hover,
@@ -206,6 +219,8 @@ img	{
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
+	background: #000;
+	color: #fff;
 }
 
 
