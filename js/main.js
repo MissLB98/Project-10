@@ -47,7 +47,7 @@ $.ajax({
 					
 				//Address
 					HTML += '<div class="address"><h3>Address</h3>' +
-						'<p class="street"><span>Street Name:</span> ' + data.results[i].location.street + '</p>' +
+						'<p class="street"><span>Street:</span> ' + data.results[i].location.street + '</p>' +
 						'<p class="country"><span>Country:</span> ' + data.results[i].location.state + '</p>' +
 						
 						'<p><span>Postal Code:</span> ' + data.results[i].location.postcode + '</p></div>';
